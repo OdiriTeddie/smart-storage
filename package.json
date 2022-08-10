@@ -1,0 +1,49 @@
+{
+  "name": "smart-storage",
+  "version": "1.0.0",
+  "description": "Tiny, SSR-safe local/session storage with JSON, TTL, and subscriptions.",
+  "license": "MIT",
+  "author": "Odiri Teddie Adamu <odiriteddie.adamu@gmail.com>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/smart-storage.git"
+  },
+  "homepage": "https://github.com/yourname/smart-storage",
+  "bugs": {
+    "url": "https://github.com/yourname/smart-storage/issues"
+  },
+  "keywords": [
+    "storage",
+    "localStorage",
+    "sessionStorage",
+    "ttl",
+    "typescript",
+    "utility"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

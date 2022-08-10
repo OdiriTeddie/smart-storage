@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false
+
+    // If you don't ship JSX in this package, you can omit this:
+    // "jsx": "react-jsx",
+
+    // Optional, if you need Node types in tests/build tooling:
+    // "types": ["node"]
+    // or install and add:  "@types/node"
+  },
+  "include": ["src", "tests"]
+}
