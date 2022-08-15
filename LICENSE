@@ -1,0 +1,11 @@
+
+---
+
+# Usage snippets
+
+### Basic
+```ts
+import storage from "smart-storage";
+
+storage.local.set("settings", { theme: "dark" }, { ttl: 86_400_000 });
+const settings = storage.local.get<{ theme: string }>("settings"); // { theme: "dark" }
